@@ -23,9 +23,6 @@ class HomeScreenBody extends StatefulWidget {
 class _HomeScreenBodyState extends State<HomeScreenBody> {
   @override
   void initState() {
-    print(widget.latitude);
-    print(widget.longitude);
-
     context.read<WeatherBloc>().add(
         WeatherFetchSuccessEvent(lat: widget.latitude, lon: widget.longitude));
     super.initState();
