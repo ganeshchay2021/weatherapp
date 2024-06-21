@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
     return RepositoryProvider(
       create: (context) => WeatherRepository(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
