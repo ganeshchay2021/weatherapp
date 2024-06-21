@@ -23,8 +23,10 @@ class HomeScreen extends StatelessWidget {
               longitude: position.longitude,
             );
           } else if (snapshot.hasError) {
-            return Center(
-              child: Text('Error: ${snapshot.error}'),
+            return Scaffold(
+              body: Center(
+                child: Text('Error: ${snapshot.error}'),
+              ),
             );
           } else {
             return Center(
