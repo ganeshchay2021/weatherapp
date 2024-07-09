@@ -4,8 +4,6 @@ import 'package:geolocator/geolocator.dart';
 import 'package:weatherapp/bloc/weather_bloc.dart';
 import 'package:weatherapp/pages/home%20screen/widget/home_screen_body.dart';
 import 'package:weatherapp/repository/weather_repository.dart';
-import 'package:weatherapp/text%20style/my_text_style.dart';
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -29,13 +27,8 @@ class HomeScreen extends StatelessWidget {
               ),
             );
           } else {
-            return Center(
-                child: Text(
-              "Location permission has been denied",
-              style: myTextStyle(
-                color: Colors.white,
-              ),
-            ));
+            return const Center(
+                child: CircularProgressIndicator());
           }
         },
       ),
