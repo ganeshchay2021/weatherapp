@@ -1,9 +1,13 @@
-# weatherapp
+# 
 
-A new Flutter project.
+A small projetc, named Weather app. In this project have Implemented Weather API and Geo location which ask for location permission and show the weather info of the location.
 
-## Getting Started
+# Screenshot of the app screen
+![7f4515ca-4013-475f-94dc-0b28707125ec](https://github.com/user-attachments/assets/f1ceedab-8223-44b4-8d3d-39c40258ed9c)
 
+<img src="https://github.com/user-attachments/assets/f1ceedab-8223-44b4-8d3d-39c40258ed9c" alt="Screenshot 1" height="500" style="margin-right: 200px;">
+
+  
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
